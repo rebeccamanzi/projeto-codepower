@@ -3,7 +3,7 @@
 body {
     background-color: rgba(187, 240, 237, .5);
     color:rgb(112, 111, 111);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto Mono', monospace;
     margin: 100px 150px auto 150px;
 }
 
@@ -17,22 +17,30 @@ a {
     color: #606060;     
 }
 
-header#cabecalho {
-    border-bottom: 1px #606060 solid;
-    height: 150px;
-    background: url("/logo-grlpwr.png");
-    background-position-y: 100px;
-    background-repeat: no-repeat;
+#titulo {
+    color: rgb(238, 36, 113);
+    font-size: 50pt;
+    padding-top: 40px;
+    margin-bottom: 0px;
+    font-family: 'Lobster', cursive;
 }
 
-/* FORMATAÇÃO DE IMAGENS(tag figure) COM LEGENDAS(tag figcaption) */
+#subtitulo {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 16pt;
+}
+
+header#cabecalho {
+    border-bottom: 1px rgba(0, 0, 0, .4) dotted;
+    height: 180px;        
+}
 
 figure.foto-legenda {
     position: relative;
     border: 5px solid rgba(255, 255, 255, 0.5);
     box-shadow: 1px 1px 4px black;
-    display: inline-block;
-   
+    display: inline-block;    
 }
 
 figure.foto-legenda img {
@@ -48,7 +56,7 @@ figure.foto-legenda figcaption {
     color: white;
     width: 100%;
     height: 100%;
-    padding: 10px;
+    padding: 5px;
     box-sizing: border-box;
     transition: opacity 1s;
 }
@@ -57,33 +65,30 @@ figure.foto-legenda:hover figcaption {
     opacity: 1;
 }
 
-/* FORMATAÇÃO DO MENU */
-
 nav#menu h1 {
     display: none;
 }
 
 nav#menu ul {
-    list-style: none; 
-    text-transform: uppercase;
+    list-style: none;     
     position: absolute;
-    top: 5px; 
-    left: 200px;
+    left: 100px;
+    top: 20px;     
 }
 
 nav#menu li {
     display: inline;
-    padding: 12px;
-    color: #606060;  
-    font-weight: bold;
+    padding: 0px 20px 0px 20px;
+    color: #606060; 
+    font-family: 'Pacifico', cursive;
+    font-size: 20pt; 
     background-color: rgba(245, 245, 245, .6);
     margin: 10px;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, .4);
 }
 
 #menu li:hover {
-    background-color: rgb(250, 170, 210);    
-    font-weight: bold;  
+    background-color: rgb(250, 170, 210);   
     color:white;       
 }
 
