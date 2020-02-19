@@ -1,0 +1,32 @@
+.txt-dir a{
+    color: #e4371f;
+    font-weight: bold;
+}
+
+div#capa {      
+    max-width: 1128px;
+    margin: 0 auto;
+    background: #cee9ed62;
+    padding: 20px;
+    height: 350px;    
+    border-bottom: 4px solid #f9df1998;
+}
+
+.img-esq {  
+  top: 150px;
+  margin: 0px; 
+  max-width: 320px;
+  float: left;
+}
+
+.txt-dir {      
+    font-size: 15pt;
+    color: black;
+    font-family: 'Nunito Sans', sans-serif;    
+    max-width: 1800px;
+    text-align: justify;    
+    margin-left: 380px;      
+    margin-right: 20px;
+    margin-top: 30px;
+}
+
