@@ -4,8 +4,9 @@ body {
     background-color: whitesmoke;
     color:rgb(112, 111, 111);
     font-family: 'Roboto Mono', monospace;
-    margin: 100px 100px auto 100px;
+    margin: 100px 100px -40px 100px;
 }
+
 
 p {
     text-align: justify;
@@ -33,6 +34,7 @@ header#cabecalho {
 #subtitulo {
     margin: 0px 400px 0px 400px;
     font-size: 16pt;
+    
 }
 
 figure.foto-legenda {
@@ -72,8 +74,7 @@ nav#menu ul {
     list-style: none;     
     position: absolute;
     left: 200px;
-    top: 5px; 
-     
+    top: 5px;     
 }
 
 nav#menu li {
@@ -89,6 +90,27 @@ nav#menu li {
 #menu li:hover {
     background-color: #f9dd19;   
     color:white;       
+}
+
+#rodape {        
+    background-color: #cee9edf8;    
+    margin-top: 80px;    
+    height: 60px;                           
+}
+
+#rodape p {
+    position: absolute;
+    vertical-align: center;
+    text-indent: 30px;
+    font-family: 'Pacifico', cursive;
+    color: rgba(0, 0, 0, 0.733);    
+    font-size: 15pt;
+}
+
+.icones {
+    float: right; 
+    margin-top: 15px;
+    margin-right: 25px;
 }
 
 

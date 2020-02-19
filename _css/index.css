@@ -9,24 +9,20 @@ div#capa {
     background: #cee9ed62;
     padding: 20px;
     height: 350px;    
-    border-bottom: 4px solid #f9df1998;
 }
 
 .img-esq {  
-  top: 150px;
-  margin: 0px; 
-  max-width: 320px;
+  position: relative;
+  margin-top: -150px;
+  margin-left: -100px; 
+  max-width: 100%;
   float: left;
 }
 
-.txt-dir {      
-    font-size: 15pt;
+.txt-dir {     
+    max-width: 1800px;      
+    margin: 20px 20px 20px 380px;   
     color: black;
-    font-family: 'Nunito Sans', sans-serif;    
-    max-width: 1800px;
-    text-align: justify;    
-    margin-left: 380px;      
-    margin-right: 20px;
-    margin-top: 30px;
+    font-size: 18px; 
 }
 
