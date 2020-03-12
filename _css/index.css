@@ -1,28 +1,19 @@
-.txt-dir a{
-    color: #e4371f;
-    font-weight: bold;
-}
-
-div#capa {      
-    max-width: 1128px;
-    margin: 0 auto;
-    background: #cee9ed62;
+/* section mulheres na T.I. */
+.mulheresti {
+    font-size: 2.0em;
+    margin: 80px 200px;
     padding: 20px;
-    height: 350px;    
+    text-align: center;
+    color:black;
+    background-color: #fcfaf925;
+    border-radius: 20px;   
 }
 
-.img-esq {  
-  position: relative;
-  margin-top: -150px;
-  margin-left: -100px; 
-  max-width: 100%;
-  float: left;
+.mulheresti a {
+    color: #e4361f;   
+    font-weight: bold; 
 }
 
-.txt-dir {     
-    max-width: 1800px;      
-    margin: 20px 20px 20px 380px;   
-    color: black;
-    font-size: 18px; 
+.mulheresti a:hover {
+    text-decoration: underline;
 }
-

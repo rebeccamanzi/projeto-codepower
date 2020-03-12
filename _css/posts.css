@@ -1,0 +1,32 @@
+/* classe com imagem + legenda */
+.foto-legenda {
+    position: relative;
+    border: 5px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 1px 1px 4px black;
+    display: inline-block;    
+} 
+
+/* imagem da classe foto-legenda */
+.foto-legenda img {
+    width: 600px;
+    height: 400px;
+}
+
+/* legenda da classe foto-legenda */
+.foto-legenda figcaption {
+    opacity: 0;
+    position: absolute; /* absoluto dentro da classe foto-legenda */
+    top: 0px; 
+    background-color: rgba(0, 0, 0, 0.287);
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    transition: opacity 1s;
+}
+
+/* ao passar o mouse na foto-legenda */
+.foto-legenda:hover figcaption {
+    opacity: 1;
+}

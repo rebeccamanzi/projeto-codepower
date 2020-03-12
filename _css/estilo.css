@@ -1,116 +1,117 @@
 @charset "UTF-8";
 
-body {
-    background-color: whitesmoke;
-    color:rgb(112, 111, 111);
-    font-family: 'Roboto Mono', monospace;
-    margin: 100px 100px -40px 100px;
+/*
+PENDENTE: CONVERTER PX PARA %
+última atualização: 11/03
+*/
+
+/* configuração padrão */
+* {
+    margin: 0;
+    padding: 0;
 }
 
-
-p {
-    text-align: justify;
-    text-indent: 50px;
+/* design responsivo: evitando distorção nas mídias */
+img,
+picture,
+video,
+embed {
+   max-width: 100%;
 }
 
-a {
-    text-decoration: none;   
-    color: #606060;     
+/* corpo todo */
+body {    
+    background-color: rgba(51, 112, 243, 0.356);
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 62.5%; /* facilitando a conversão de px para em (site responsivo) */    
 }
 
-header#cabecalho {
- 
-    height: 150px;        
+/* navbar menu */
+.menu ul {  
+    top: 0;    
+    position: fixed;
+    list-style: none;   
+    width: 100%;  
+    padding: 10px;
+    background-color: rgb(247, 255, 140); 
+    text-align: center;    
 }
 
-#titulo {
+/* itens do menu */
+.menu li {    
+    display: inline;
+    padding: 5px 30px;    
+    font-family: 'Pacifico', cursive;    
+    font-size: 2.5em;    
+}
+
+/* links do menu */
+.menu a {
+    color: rgb(0, 0, 0);
+}
+
+/* ao passar o mouse em um link do menu */
+.menu a:hover {
+    color:#e4371f;    
+}
+
+/* section do título + subtítulo + imagem */
+.logo {    
+    margin: 80px;      
+    height: 350px; 
+}
+
+/* div título + subtítulo */
+.codepwr {
+    float: right;
+    padding-right: 200px;    
+    padding-top: 100px;
+}
+
+/* h1 título */
+.titulo {    
     color: #e4371f;
-    font-size: 50pt;
-    padding-top: 20px;
-    margin: 0px 400px 0px 400px;
+    font-size: 10.0em;       
     font-family: 'Lobster', cursive;
 }
 
-#subtitulo {
-    margin: 0px 400px 0px 400px;
-    font-size: 16pt;
-    
+/* h2 subtítulo */
+.subtitulo {  
+    font-size: 2.6em;   
+    color: black; 
 }
 
-figure.foto-legenda {
-    position: relative;
-    border: 5px solid rgba(255, 255, 255, 0.5);
-    box-shadow: 1px 1px 4px black;
-    display: inline-block;    
-}
+/* imagem wecandoit */
+.img-esq {    
+   float: left; 
+   padding-left: 150px; 
+   padding-top: 30px;
+  }
 
-figure.foto-legenda img {
-    width: 600px;
-    height: 400px;
-}
+/* conf links */
+a {
+    text-decoration: none; 
+}   
 
-figure.foto-legenda figcaption {
-    opacity: 0;
-    position: absolute; /* absoluto porem esta dentro da classe foto-legenda */
-    top: 0px; 
-    background-color: rgba(0, 0, 0, .4);
-    color: white;
-    width: 100%;
-    height: 100%;
-    padding: 5px;
-    box-sizing: border-box;
-    transition: opacity 1s;
+/* rodapé */
+.rodape {       
+    background-color: rgb(247, 255, 140);    
+    width: 100%; 
+    bottom: 0;    
+    position: fixed;
+    vertical-align: middle;       
+                        
 }
-
-figure.foto-legenda:hover figcaption {
-    opacity: 1;
-}
-
-nav#menu h1 {
-    display: none;
-}
-
-nav#menu ul {
-    list-style: none;     
-    position: absolute;
-    left: 200px;
-    top: 5px;     
-}
-
-nav#menu li {
-    display: inline;
-    padding: 0px 30px 0px 30px;    
-    font-family: 'Pacifico', cursive;    
-    font-size: 20pt; 
-    background-color: rgba(245, 245, 245, .6);
-    margin-right: 40px;
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, .4);
-}
-
-#menu li:hover {
-    background-color: #f9dd19;   
-    color:white;       
-}
-
-#rodape {        
-    background-color: #cee9edf8;    
-    margin-top: 80px;    
-    height: 60px;                           
-}
-
-#rodape p {
-    position: absolute;
-    vertical-align: center;
-    text-indent: 30px;
+.rodape p {  
+    float: left; 
+    padding: 10px 8px;        
     font-family: 'Pacifico', cursive;
     color: rgba(0, 0, 0, 0.733);    
-    font-size: 15pt;
+    font-size: 2.0em;
 }
-
-.icones {
-    float: right; 
-    margin-top: 15px;
-    margin-right: 25px;
+.icones {    
+    float: right;
+    padding: 10px 8px;
 }
 
 
